@@ -4,7 +4,14 @@ public class Pessoa {
     private int codigo;
     private String nome, rua, cidade;
 
-    public Pessoa() {}
+    
+
+    public Pessoa(int codigo, String nome, String rua, String cidade) {
+        this.setCodigo(codigo);
+        this.setNome(nome);
+        this.setRua(rua);
+        this.setCidade(cidade);
+    }
 
     public int getCodigo() {
         return codigo;
@@ -38,5 +45,8 @@ public class Pessoa {
         this.cidade = cidade;
     }
     // "src\\util\\A.cvs"
-    public void toCSV(){}
+    public String toCSV(){
+        return "Pessoa [Codigo=" + getCodigo() + ", Nome=" + getNome() + ", Rua=" + getRua() + ", Cidade=" + getCidade() + "]";
+    }
+    
 }

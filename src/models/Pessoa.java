@@ -12,6 +12,14 @@ public class Pessoa {
         this.setRua(rua);
         this.setCidade(cidade);
     }
+    public Pessoa(int codigo, String nome) {
+        this.setCodigo(codigo);
+        this.setNome(nome);
+    }
+    public Pessoa(String rua, String cidade) {
+        this.setRua(rua);
+        this.setCidade(cidade);
+    }
 
     public int getCodigo() {
         return codigo;

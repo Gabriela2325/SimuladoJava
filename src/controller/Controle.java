@@ -5,8 +5,13 @@ import models.*;
 
 public class Controle {
     private ArrayList<Pessoa> pessoas = new ArrayList<>();
-    public Controle(){
-        Pessoa pessoa = new Pessoa(1,"vitor","rua b","Curitiba");
-        Writter writer = new Writter(pessoa);
+    public Controle(){}
+
+    public void addPessoa(int id, String nome){
+        Pessoa pessoa = new Pessoa(id, nome);
+    }
+
+    public void setPessoa(int id, String rua, String cidade){
+        pessoas
     }
 }

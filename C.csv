@@ -1,2 +1,3 @@
-Pessoa [Codigo=1, Nome=vitor, Rua=rua b, Cidade=Curitiba]
-Pessoa [Codigo=1, Nome=vitor, Rua=rua b, Cidade=Curitiba]
+1; Carlos; Rua A; Curitiba
+1; Carlos; Rua B; São Paulo
+2; Paulo; Rua C; Blumenal 

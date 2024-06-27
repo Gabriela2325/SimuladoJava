@@ -54,7 +54,7 @@ public class Pessoa {
     }
     // "src\\util\\A.cvs"
     public String toCSV(){
-        return "Pessoa [Codigo=" + getCodigo() + ", Nome=" + getNome() + ", Rua=" + getRua() + ", Cidade=" + getCidade() + "]";
+        return getCodigo() + ";" + getNome() + ";" + getRua() + ";" + getCidade() + "\n";
     }
     
 }

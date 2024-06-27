@@ -1,23 +1,27 @@
 package controller;
 
-
-
-import java.io.File;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-import models.Pessoa;
-
-public class Writter {
+public class Writer {
     
-    private File file;
-    public Writter(Pessoa pessoa){
+    private String file = "";
+    public Writer(){}
+
+    public String getFile() {
+        return file;
+    }
+    
+    public void addFile(String file) {
+        this.file += file;
+    }
+    
+    public void write(){
         try   
         {
             BufferedWriter writer = new BufferedWriter(new FileWriter("C.csv"));
-            writer.write(pessoa.toCSV());
-            writer.write("\n"+pessoa.toCSV());
+            writer.write(file);
             writer.close();
         }   
         catch (IOException e)   
